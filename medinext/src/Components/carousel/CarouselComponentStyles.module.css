@@ -1,0 +1,87 @@
+/* ====== Estilos base (≥1280px) ====== */
+.imgContainer {
+	position: relative;
+	width: 100%;
+	height: auto;
+  }
+  
+  .imgContainer::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg, rgba(5, 196, 170, 1) 0%, rgba(255, 255, 255, 0) 80%);
+	z-index: 1;
+	pointer-events: none;
+  }
+  
+  .carouselImg {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	display: block;
+	position: relative;
+	z-index: 0;
+  }
+  
+  .overlayText {
+	position: absolute;
+	left: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 200;
+  }
+  
+  
+  /* ====== 769px a 1279px ====== */
+  @media (max-width: 1279px) {
+	.carouselImg {
+	  height: 400px;
+	}
+  
+	.overlayText {
+	  font-size: 2.5rem;
+	  left: 1.5rem;
+	}
+  
+	.imgContainer::before {
+	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.85) 0%, rgba(255, 255, 255, 0) 75%);
+	}
+  }
+  
+  
+  /* ====== 481px a 768px ====== */
+  @media (max-width: 768px) {
+	.carouselImg {
+	  height: 360px;
+	}
+  
+	.overlayText {
+	  font-size: 2rem;
+	  left: 1.2rem;
+	}
+  
+	.imgContainer::before {
+	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.75) 0%, rgba(255, 255, 255, 0) 70%);
+	}
+  }
+  
+  
+  /* ====== 0px a 480px ====== */
+  @media (max-width: 480px) {
+	.carouselImg {
+	  height: 280px;
+	}
+  
+	.overlayText {
+	  font-size: 1.5rem;
+	  left: 1rem;
+	  text-align: left;
+	}
+  
+	.imgContainer::before {
+	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.7) 0%, rgba(255, 255, 255, 0) 65%);
+	}
+  }

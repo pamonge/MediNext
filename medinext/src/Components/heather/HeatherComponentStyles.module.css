@@ -1,0 +1,116 @@
+.heatherContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #0D5586;
+    background: linear-gradient(90deg, rgba(13, 85, 134, 1) 0%, rgba(5, 196, 170, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    padding: 0.5rem 0;
+  }
+  
+  .clockContainer, .emailContainer, .phoneContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .heatherClock, .heatherEmail, .heatherPhone {
+    width: 35px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .heatherText {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  
+  /* 0 - 480px (Mobile Small) */
+  @media (max-width: 480px) {
+    .heatherContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 0;
+      background: linear-gradient(180deg, rgba(13, 85, 134, 1) 0%, rgba(5, 196, 170, 1) 100%);
+    }
+  
+    .clockContainer, .emailContainer, .phoneContainer {
+      width: 100%;
+      justify-content: flex-start;
+      padding: 0.3rem 1rem;
+    }
+  
+    .heatherClock, .heatherEmail, .heatherPhone {
+      width: 25px;
+      margin-right: 8px;
+    }
+  
+    .heatherText {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* 481px - 768px (Mobile Large / Tablet Small) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .heatherContainer {
+      flex-wrap: wrap;
+      padding: 0.6rem 0;
+    }
+  
+    .clockContainer, .emailContainer, .phoneContainer {
+      width: 50%;
+      padding: 0.4rem;
+      justify-content: center;
+    }
+  
+    .heatherClock, .heatherEmail, .heatherPhone {
+      width: 30px;
+      margin-right: 8px;
+    }
+  
+    .heatherText {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* 769px - 1279px (Tablet Large / Laptop) */
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .heatherContainer {
+      padding: 0.7rem 0;
+    }
+  
+    .clockContainer, .emailContainer, .phoneContainer {
+      padding: 0.5rem;
+    }
+  
+    .heatherClock, .heatherEmail, .heatherPhone {
+      width: 32px;
+    }
+  
+    .heatherText {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* 1280px+ (Desktop) */
+  @media (min-width: 1280px) {
+    .heatherContainer {
+      padding: 1rem 0;
+    }
+  
+    .heatherClock, .heatherEmail, .heatherPhone {
+      width: 40px;
+      margin-right: 12px;
+      transition: transform 0.3s ease;
+    }
+  
+    .heatherClock:hover, .heatherEmail:hover, .heatherPhone:hover {
+      transform: scale(1.1);
+    }
+  
+    .heatherText {
+      font-size: 1.1rem;
+    }
+  }

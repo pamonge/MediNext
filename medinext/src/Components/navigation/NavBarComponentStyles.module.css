@@ -1,0 +1,128 @@
+.container {
+  background-color: var(--clr-white);
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.mediNextLogo {
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 6rem;
+  margin-top: 10px;
+}
+
+.navItemsList {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  gap: 1.5rem;
+  margin-right: 3rem;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* 0 - 480px (Mobile Small) */
+@media (max-width: 480px) {
+  .container {
+    height: 80px;
+  }
+
+  .mediNextLogo {
+    height: 60px;
+    margin-left: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .navItemsList {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-white);
+    padding: 1rem 0;
+    display: none;
+    gap: 0.8rem;
+    margin-right: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navItemsList.open {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 481px - 768px (Mobile Large / Tablet Small) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .mediNextLogo {
+    height: 65px;
+    margin-left: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navItemsList {
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-white);
+    padding: 1.5rem 0;
+    display: none;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+  .navItemsList.open {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 769px - 1279px (Tablet Large / Laptop) */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .mediNextLogo {
+    margin-left: 3rem;
+  }
+
+  .navItemsList {
+    gap: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* 1280px+ (Desktop) */
+@media (min-width: 1280px) {
+  .mediNextLogo {
+    margin-left: 6rem;
+  }
+
+  .navItemsList {
+    gap: 2rem;
+    margin-right: 5rem;
+  }
+}

@@ -1,0 +1,166 @@
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .textContainer {
+    max-width: 50%;
+    margin: 25px;
+    padding: 0 5%;
+  }
+  
+  .productText {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: var(--clr-grey);
+    line-height: 1.6;
+  }
+  
+  .planTitle {
+    color: var(--clr-lightblue);
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+  
+  .planDetail {
+    color: var(--clr-grey);
+    line-height: 1.8;
+    padding-left: 1.5rem;
+  }
+
+  .planDetail > li {
+    font-size: 1.1rem;
+  }
+  
+  .medicalPlanImg {
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  
+  /* 0 - 480px (Mobile Small) */
+  @media (max-width: 480px) {
+    .productContainer {
+      flex-direction: column-reverse;
+      padding: 1rem 0;
+    }
+  
+    .textContainer {
+      max-width: 90%;
+      margin: 15px 0;
+      padding: 0 5%;
+    }
+  
+    .productText {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+  
+    .planTitle {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+  
+    .planDetail {
+      font-size: 0.9rem;
+      padding-left: 1rem;
+    }
+  
+    .medicalPlanImg {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+  
+  /* 481px - 768px (Mobile Large / Tablet Small) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .productContainer {
+      flex-direction: column-reverse;
+      padding: 1.5rem 0;
+    }
+  
+    .textContainer {
+      max-width: 80%;
+      margin: 20px auto;
+      padding: 0;
+    }
+  
+    .productText {
+      font-size: 1rem;
+    }
+  
+    .planTitle {
+      font-size: 1.3rem;
+    }
+  
+    .medicalPlanImg {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* 769px - 1279px (Tablet Large / Laptop) */
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .productContainer {
+      padding: 2rem 1rem;
+    }
+  
+    .textContainer {
+      max-width: 50%;
+      margin: 20px;
+      padding: 0 3%;
+    }
+  
+    .productText {
+      font-size: 1.05rem;
+    }
+  
+    .planTitle {
+      font-size: 1.4rem;
+    }
+  
+    .medicalPlanImg {
+      max-width: 90%;
+    }
+  }
+  
+  /* 1280px+ (Desktop) */
+  @media (min-width: 1280px) {
+    .productContainer {
+      padding: 3rem 1rem;
+    }
+  
+    .textContainer {
+      padding: 0 5%;
+    }
+  
+    .productText {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  
+    .planTitle {
+      font-size: 1.6rem;
+    }
+  
+    .planDetail {
+      font-size: 1.05rem;
+    }
+  
+    .medicalPlanImg {
+      transition: transform 0.3s ease;
+    }
+  
+    .medicalPlanImg:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }

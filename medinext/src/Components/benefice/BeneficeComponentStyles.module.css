@@ -1,0 +1,109 @@
+/* === Desktop: ≥1280px === */
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.textContainer {
+    flex: 1;
+    color: var(--clr-grey);
+    padding: 0 2rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.imgBenefice {
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* === Laptops y Tablets Grandes: 769px–1279px === */
+@media (max-width: 1279px) {
+    .contentContainer {
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .textContainer {
+        padding: 0 1.5rem;
+        font-size: 1rem;
+    }
+
+    .imgBenefice {
+        width: 45%;
+        max-width: 500px;
+    }
+}
+
+
+/* === Tablets y Móviles Grandes: 481px–768px === */
+@media (max-width: 768px) {
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .textContainer {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .imgBenefice {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+/* === Móviles Pequeños: 0–480px === */
+@media (max-width: 480px) {
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .textContainer {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .textContainer ul {
+        padding-left: 20px;
+        margin: 12px 0;
+    }
+
+    .textContainer li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    .textContainer li::before {
+        content: '✅';
+        margin-right: 8px;
+    }
+
+    .imgBenefice {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}

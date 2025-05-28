@@ -1,0 +1,100 @@
+.navLink {
+    color: var(--clr-black);
+    text-decoration: none;
+    padding: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .navLink:hover {
+    color: var(--clr-blue);
+    transform: translateY(-2px);
+  }
+  
+  .navLinkInit {
+    color: var(--clr-fuchsia);
+    text-decoration: none;
+    padding: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .navLinkAppointment {
+    color: var(--clr-black);
+    text-decoration: none;
+    padding: 1.5rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  
+  /* 0 - 480px (Mobile Small) */
+  @media (max-width: 480px) {
+    .navLink,
+    .navLinkInit,
+    .navLinkAppointment {
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navLink:hover,
+    .navLinkAppointment:hover {
+      transform: translateX(5px);
+      background-color: rgba(13, 85, 134, 0.05);
+    }
+  }
+  
+  /* 481px - 768px (Mobile Large / Tablet Small) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .navLink,
+    .navLinkInit,
+    .navLinkAppointment {
+      padding: 1rem 1.2rem;
+      font-size: 0.95rem;
+    }
+  
+    .navLink:hover {
+      color: var(--clr-blue);
+      transform: scale(1.05);
+    }
+  }
+  
+  /* 769px - 1279px (Tablet Large / Laptop) */
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .navLink,
+    .navLinkInit,
+    .navLinkAppointment {
+      padding: 1.2rem 1.4rem;
+      font-size: 1rem;
+    }
+  
+    .navLink:hover {
+      color: var(--clr-blue);
+      transform: translateY(-3px);
+    }
+  }
+  
+  /* 1280px+ (Desktop) */
+  @media (min-width: 1280px) {
+    .navLink,
+    .navLinkInit,
+    .navLinkAppointment {
+      padding: 1.5rem 1.8rem;
+      font-size: 1.1rem;
+      transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+  
+    .navLink:hover {
+      color: var(--clr-blue);
+      transform: translateY(-5px);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navLinkInit:hover {
+      color: var(--clr-fuchsia-dark);
+    }
+  }

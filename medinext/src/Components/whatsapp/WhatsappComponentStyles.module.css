@@ -1,0 +1,73 @@
+.whatsAppIcon {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsAppIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .whatsAppIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  
+  /* 0 - 480px (Mobile Small) */
+  @media (max-width: 480px) {
+    .whatsAppIcon {
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .whatsAppIcon:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* 481px - 768px (Mobile Large / Tablet Small) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .whatsAppIcon {
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+  
+  /* 769px - 1279px (Tablet Large / Laptop) */
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .whatsAppIcon {
+      width: 65px;
+      height: 65px;
+      bottom: 50px;
+      right: 50px;
+    }
+  }
+  
+  /* 1280px+ (Desktop) */
+  @media (min-width: 1280px) {
+    .whatsAppIcon {
+      width: 80px;
+      height: 80px;
+      bottom: 80px;
+      right: 80px;
+    }
+  
+    .whatsAppIcon:hover {
+      transform: scale(1.15);
+    }
+  }

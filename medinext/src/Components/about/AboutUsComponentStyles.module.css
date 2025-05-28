@@ -1,0 +1,107 @@
+/* Estilos generales para desktop (≥1280px) */
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.aboutText {
+    flex: 1;
+    padding: 2rem;
+    text-align: justify;
+    color: var(--clr-grey);
+    font-size: 1.1rem;
+}
+
+.aboutImg {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* 769px a 1279px (laptops y tablets grandes) */
+@media (max-width: 1279px) {
+    .aboutContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .aboutText {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .aboutImg {
+        width: 45%;
+        max-width: 500px;
+    }
+}
+
+
+/* 481px a 768px (tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .aboutText {
+        padding: 0 1rem;
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .aboutImg {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+
+/* 0 a 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .aboutText {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .aboutImg {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/* scrollReveal animación opcional */
+/* .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+} */

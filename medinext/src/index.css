@@ -1,0 +1,101 @@
+/* Reset ---------------------------- */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Root Variables ------------------- */
+  :root {
+    --ff-primary: 'Poppins';
+  
+    --fw-reg: 300;
+    --fw-bold: 900;
+  
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-grey: #7a7c7c;
+    --clr-fuchsia: #ed108d;
+    --clr-green: #05c4aa;
+    --clr-pale-blue: #dbe8ec;
+    --clr-lightblue: #1CABE8;
+    --clr-blue: #0d5586;
+  
+    --fs-h1: 70px;
+    --fs-h2: 52px;
+    --fs-h3: 34px;
+    --fs-p: 18px;
+  }
+  
+  /* Responsive Typography ------------ */
+  @media (max-width: 800px) {
+    :root {
+      --fs-h1: 60px;
+      --fs-h2: 45px;
+      --fs-h3: 30px;
+      --fs-p: 14px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    :root {
+      --fs-h1: 40px;
+      --fs-h2: 31px;
+      --fs-h3: 22px;
+      --fs-p: 12px;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    :root {
+      --fs-h1: 30px;
+      --fs-h2: 24px;
+      --fs-h3: 18px;
+    }
+  }
+  
+  /* Base Styles ---------------------- */
+  body {
+    background: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-p);
+    line-height: 1.5;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul, li, p, a {
+    text-decoration: none;
+  }
+  
+  /* Typography ---------------------- */
+  h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0;
+  }
+  
+  h1 { font-size: var(--fs-h1); }
+  h2 { font-size: var(--fs-h2); }
+  h3 { font-size: var(--fs-h3); }
+  
+  p { font-size: var(--fs-p); }
+  
+  .section__title {
+    margin-bottom: 0.25rem;
+  }
+  
+  .section__subtitle {
+    font-size: var(--fs-h3);
+    margin: 0;
+  }

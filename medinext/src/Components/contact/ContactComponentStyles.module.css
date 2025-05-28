@@ -1,0 +1,87 @@
+/* ====== Estilos base (≥1280px) ====== */
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 8%;
+  gap: 1.5rem;
+  flex: 1 1 320px;
+  max-width: 600px;
+}
+
+.contactText {
+  text-align: justify;
+  color: var(--clr-grey);
+  font-size: 1rem;
+}
+
+.contactImg {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+
+/* ====== 769px a 1279px ====== */
+@media (max-width: 1279px) {
+  .contactText {
+    font-size: 0.95rem;
+  }
+
+  .contactImg {
+    max-width: 380px;
+  }
+
+  .textContainer {
+    padding: 4% 6%;
+  }
+}
+
+
+/* ====== 481px a 768px ====== */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .contactText {
+    font-size: 0.9rem;
+  }
+
+  .textContainer {
+    padding: 3% 5%;
+  }
+
+  .contactImg {
+    max-width: 100%;
+  }
+}
+
+
+/* ====== 0px a 480px ====== */
+@media (max-width: 480px) {
+  .contactText {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  .textContainer {
+    padding: 2% 4%;
+    gap: 1rem;
+  }
+
+  .contactImg {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
