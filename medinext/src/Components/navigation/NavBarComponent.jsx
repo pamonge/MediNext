@@ -20,7 +20,7 @@ export const NavBarComponent = () => {
 
     return (
         <div className={styles.container}> 
-            <img src={mediNextLogo} className={styles.mediNextLogo}/>
+            <img alt='MediNext Logo' src={mediNextLogo} className={styles.mediNextLogo}/>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 {menuOpen ? <X size={30} /> : <Menu size={30} />}
             </div>
