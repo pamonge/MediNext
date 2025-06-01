@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -19,6 +20,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.1",
     "scrollreveal": "^4.0.9",
+    "sitemap": "^8.0.0",
     "swiper": "^11.2.6"
   },
   "devDependencies": {
