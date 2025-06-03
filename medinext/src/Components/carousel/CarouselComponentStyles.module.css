@@ -9,7 +9,7 @@
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(153deg,rgba(26, 160, 217, 1) 51%, rgba(255, 255, 255, 0) 100%);;
+	background: linear-gradient(153deg,rgba(26, 160, 217, 1) 20%, rgba(255, 255, 255, 0) 100%);
 	z-index: 1;
 	pointer-events: none;
   }
@@ -47,7 +47,7 @@
 	}
   
 	.imgContainer::before {
-	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.85) 0%, rgba(255, 255, 255, 0) 75%);
+	  background: linear-gradient(153deg,rgba(26, 160, 217, 1) 20%, rgba(255, 255, 255, 0) 100%);
 	}
   }
   
@@ -64,7 +64,7 @@
 	}
   
 	.imgContainer::before {
-	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.75) 0%, rgba(255, 255, 255, 0) 70%);
+	  background: linear-gradient(153deg,rgba(26, 160, 217, 1) 20%, rgba(255, 255, 255, 0) 100%);
 	}
   }
   
@@ -82,6 +82,6 @@
 	}
   
 	.imgContainer::before {
-	  background: linear-gradient(90deg, rgba(5, 196, 170, 0.7) 0%, rgba(255, 255, 255, 0) 65%);
+	  background: linear-gradient(153deg,rgba(26, 160, 217, 1) 20%, rgba(255, 255, 255, 0) 100%);
 	}
   }
