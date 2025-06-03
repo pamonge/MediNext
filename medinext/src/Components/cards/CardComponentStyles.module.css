@@ -10,7 +10,7 @@
   margin: 0.5rem;
   border-radius: 15px;
   box-shadow: 3px 3px 5px var(--clr-grey);
-  background: linear-gradient(133deg, rgba(13, 85, 134, 1) 0%, rgba(5, 196, 170, 0.88) 100%);
+  background: radial-gradient(circle,rgba(0, 0, 0, 1) 0%, rgba(181, 228, 248, 1) 0%, rgba(28, 171, 232, 1) 100%);
   transition: all 0.3s ease;
 }
 
