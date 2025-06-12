@@ -37,7 +37,7 @@
   /* 0 - 480px (Mobile Small) */
   @media (max-width: 480px) {
     .footerContainer {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       padding: 1rem 0.75rem;
       gap: 1.5rem;
@@ -53,7 +53,7 @@
   /* 481px - 768px (Mobile Large / Tablet Small) */
   @media (min-width: 481px) and (max-width: 768px) {
     .footerContainer {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       padding: 1.25rem 1rem;
       gap: 1.75rem;

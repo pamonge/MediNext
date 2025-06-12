@@ -39,7 +39,7 @@
   /* 481px - 768px (Mobile Large / Tablet Small) */
   @media (min-width: 481px) and (max-width: 768px) {
     .socialMediaContainer {
-      flex-direction: column;
+      flex-direction: row;
       gap: 0.75rem;
     }
   
