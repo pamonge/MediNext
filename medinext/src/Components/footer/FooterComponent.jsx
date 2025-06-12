@@ -4,6 +4,7 @@ import { MapComponent } from './MapComponent'
 import styles from './FooterComponentStyles.module.css'
 import { SocialMediaComponent } from './SocialMediaComponent'
 import { NavToContact } from '../button/buttonLogic/NavToContact.jsx'
+import { Sign } from '../sign/Sign.jsx'
 
 export const FooterComponent = () => {
 	return (
@@ -11,6 +12,7 @@ export const FooterComponent = () => {
 			<div className={styles.contactData}> 
 				<ContactInfo />
 				<NavToContact />
+				<Sign />
 			</div>
 			<MapComponent />
 			<SocialMediaComponent />

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://localhost:5173/sitemap.xml 
+Sitemap: https://www.medinextsalud.com/sitemap.xml 

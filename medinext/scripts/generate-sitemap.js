@@ -20,7 +20,7 @@ const routes = [
 ];
 
 // Base URL del sitio (ajustar en producción)
-const hostname = 'https://localhost:5173';
+const hostname = 'https://www.medinextsalud.com';
 
 async function generateSitemap() {
   const sitemapStream = new SitemapStream({ hostname });
