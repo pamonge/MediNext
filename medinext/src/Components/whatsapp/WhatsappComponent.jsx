@@ -6,7 +6,7 @@ export const WhatsappComponent = () => {
   return (
     <div>
         <a
-        href="https://wa.me/5492617459941"
+        href="https://wa.me/5492617459901"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsAppIcon}
